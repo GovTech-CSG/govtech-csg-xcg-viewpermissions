@@ -1,5 +1,7 @@
 # govtech-csg-xcg-viewpermissions
 
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/8495/badge)](https://www.bestpractices.dev/projects/8495)
+
 This package belongs to the **eXtended Code Guardrails (XCG)** project, which consists of a series of packages that harden the Django web framework to prevent common web application vulnerabilities.
 
 Specifically, the View Permissions package modifies Django's default behaviour such that all views are "private" by default (i.e. inaccessible to all, whether authenticated or not). This acts as an extra layer of defense against coding mistakes or misconfigurations, forcing developers to explicitly define permissions for each view before they can be accessed. Access is given using Django's built in authentication and authorization system - for example through decorators such as `django.contrib.auth.decorators.login_required` - which should be familiar to existing Django developers.
